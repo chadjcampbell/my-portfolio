@@ -1,0 +1,20 @@
+.title {
+  margin-bottom: 1em;
+}
+
+.skill-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+}
+
+.skill-icon {
+  font-size: 72px;
+  padding: 0.25em;
+  margin: 1em 0.5em;
+  border-radius: 50%;
+  background-color: aliceblue;
+  box-shadow: var(--box-shadow);
+}

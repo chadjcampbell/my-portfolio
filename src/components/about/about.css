@@ -10,6 +10,7 @@ img {
   margin: 4em;
   border-radius: 50%;
   width: 50%;
+  box-shadow: var(--box-shadow);
 }
 
 h1 {
