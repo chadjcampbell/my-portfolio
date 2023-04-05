@@ -7,16 +7,36 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  max-width: 1200px;
+  max-width: 1400px;
+  margin-bottom: 6em;
 }
 
 .skill-icon {
   font-size: 72px;
   padding: 0.25em;
-  margin: 1em 0.5em;
+  margin: 1.25em 0.5em;
   border-radius: 50%;
   background-color: aliceblue;
   box-shadow: var(--box-shadow);
+}
+
+.each-skill {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5em;
+  margin: 1em 0.5em;
+  background: none;
+  color: inherit;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+p {
+  margin-top: 1em;
 }
 
 @media only screen and (max-width: 600px) {
