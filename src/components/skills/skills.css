@@ -18,3 +18,9 @@
   background-color: aliceblue;
   box-shadow: var(--box-shadow);
 }
+
+@media only screen and (max-width: 600px) {
+  .skill-icon {
+    font-size: 48px;
+  }
+}
