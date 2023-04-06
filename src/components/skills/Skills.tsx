@@ -60,15 +60,15 @@ export const Skills = () => {
   return (
     <section className="skills">
       <h2 className="title">Skills</h2>
-
       <motion.ul
-        className="container skill-container"
+        className="skill-container"
         variants={container}
         initial="hidden"
-        animate="visible"
+        whileInView="visible"
+        viewport={{ once: true }}
       >
         {skillArray.map((skill) => (
-          <motion.li key={skill[0]} className="item each-skill" variants={item}>
+          <motion.li key={skill[0]} className="each-skill" variants={item}>
             <a href={skill[2]} target="_blank">
               <i className={`skill-icon ${skill[0]}`}></i>
             </a>
