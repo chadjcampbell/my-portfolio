@@ -11,10 +11,17 @@
   margin-bottom: 6em;
 }
 
+.skill-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .skill-icon {
   font-size: 72px;
   padding: 0.25em;
-  margin: 1.25em 0.5em;
+  margin: 0.5em;
   border-radius: 50%;
   background-color: aliceblue;
   box-shadow: var(--box-shadow);

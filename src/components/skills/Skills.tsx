@@ -69,10 +69,10 @@ export const Skills = () => {
       >
         {skillArray.map((skill) => (
           <motion.li key={skill[0]} className="each-skill" variants={item}>
-            <a href={skill[2]} target="_blank">
-              <i className={`skill-icon ${skill[0]}`}></i>
+            <a className="skill-link" href={skill[2]} target="_blank">
+              <i aria-hidden="true" className={`skill-icon ${skill[0]}`}></i>
+              <p>{skill[1]}</p>
             </a>
-            <p>{skill[1]}</p>
           </motion.li>
         ))}
       </motion.ul>
