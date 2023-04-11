@@ -1,4 +1,4 @@
-section {
+.about-section {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -6,14 +6,14 @@ section {
   min-height: 100vh;
 }
 
-img {
+.about-img {
   margin: 4em;
   border-radius: 50%;
   width: 50%;
   box-shadow: var(--box-shadow);
 }
 
-h1 {
+.about-h1 {
   font-weight: 900;
   font-size: 3em;
   background: -webkit-linear-gradient(#f97918, #e82ff9d8);

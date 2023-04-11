@@ -1,4 +1,4 @@
-import "./skills.css";
+import styles from "./skills.module.css";
 import { motion } from "framer-motion";
 
 const skillArray = [
@@ -58,19 +58,26 @@ export const Skills = () => {
   };
 
   return (
-    <section className="skills">
-      <h2 className="title">Skills</h2>
+    <section className={styles["skills-section"]}>
+      <h2 className={styles.title}>Skills</h2>
       <motion.ul
-        className="skill-container"
+        className={styles["skill-container"]}
         variants={container}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
       >
         {skillArray.map((skill) => (
-          <motion.li key={skill[0]} className="each-skill" variants={item}>
-            <a className="skill-link" href={skill[2]} target="_blank">
-              <i aria-hidden="true" className={`skill-icon ${skill[0]}`}></i>
+          <motion.li
+            key={skill[0]}
+            className={styles["each-skill"]}
+            variants={item}
+          >
+            <a className={styles["skill-link"]} href={skill[2]} target="_blank">
+              <i
+                aria-hidden="true"
+                className={`${styles["skill-icon"]} ${skill[0]}`}
+              ></i>
               <p>{skill[1]}</p>
             </a>
           </motion.li>
