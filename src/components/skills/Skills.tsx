@@ -2,38 +2,69 @@ import styles from "./skills.module.css";
 import { motion } from "framer-motion";
 
 const skillArray = [
-  [
-    "devicon-html5-plain colored",
-    "HTML",
-    "https://developer.mozilla.org/en-US/docs/Web/HTML",
-  ],
-  ["devicon-css3-plain colored", "CSS", "https://css-tricks.com/"],
-  [
-    "devicon-javascript-plain colored",
-    "Javascript",
-    "https://javascript.info/",
-  ],
-  [
-    "devicon-typescript-plain colored",
-    "Typescript",
-    "https://www.typescriptlang.org/",
-  ],
-  ["devicon-react-original colored", "React", "https://react.dev/"],
-  [
-    "devicon-firebase-plain colored",
-    "Firebase",
-    "https://firebase.google.com/",
-  ],
-  ["devicon-sqlite-plain colored", "SQLite", "https://sqlite.org/index.html"],
-  ["devicon-nodejs-plain colored", "NodeJS", "https://nodejs.org/en"],
-  ["devicon-git-plain colored", "Git", "https://git-scm.com/"],
-  ["devicon-c-plain colored", "C", "https://www.learn-c.org/"],
-  ["devicon-python-plain colored", "Python", "https://www.learnpython.org/"],
-  [
-    "devicon-flask-original colored",
-    "Flask",
-    "https://flask.palletsprojects.com/en/2.2.x/",
-  ],
+  {
+    class: "devicon-html5-plain colored",
+    name: "HTML",
+    link: "https://developer.mozilla.org/en-US/docs/Web/HTML",
+  },
+  {
+    class: "devicon-css3-plain colored",
+    name: "CSS",
+    link: "https://css-tricks.com/",
+  },
+
+  {
+    class: "devicon-javascript-plain colored",
+    name: "Javascript",
+    link: "https://javascript.info/",
+  },
+  {
+    class: "devicon-typescript-plain colored",
+    name: "Typescript",
+    link: "https://www.typescriptlang.org/",
+  },
+  {
+    class: "devicon-react-original colored",
+    name: "React",
+    link: "https://react.dev/",
+  },
+
+  {
+    class: "devicon-firebase-plain colored",
+    name: "Firebase",
+    link: "https://firebase.google.com/",
+  },
+  {
+    class: "devicon-sqlite-plain colored",
+    name: "SQLite",
+    link: "https://sqlite.org/index.html",
+  },
+  {
+    class: "devicon-nodejs-plain colored",
+    name: "NodeJS",
+    link: "https://nodejs.org/en",
+  },
+  {
+    class: "devicon-git-plain colored",
+    name: "Git",
+    link: "https://git-scm.com/",
+  },
+  {
+    class: "devicon-c-plain colored",
+    name: "C",
+    link: "https://www.learn-c.org/",
+  },
+  {
+    class: "devicon-python-plain colored",
+    name: "Python",
+    link: "https://www.learnpython.org/",
+  },
+
+  {
+    class: "devicon-flask-original colored",
+    name: "Flask",
+    link: "https://flask.palletsprojects.com/en/2.2.x/",
+  },
 ];
 
 export const Skills = () => {
@@ -69,16 +100,20 @@ export const Skills = () => {
       >
         {skillArray.map((skill) => (
           <motion.li
-            key={skill[0]}
+            key={skill.name}
             className={styles["each-skill"]}
             variants={item}
           >
-            <a className={styles["skill-link"]} href={skill[2]} target="_blank">
+            <a
+              className={styles["skill-link"]}
+              href={skill.link}
+              target="_blank"
+            >
               <i
                 aria-hidden="true"
-                className={`${styles["skill-icon"]} ${skill[0]}`}
+                className={`${styles["skill-icon"]} ${skill.class}`}
               ></i>
-              <p className={styles["skill-name"]}>{skill[1]}</p>
+              <p className={styles["skill-name"]}>{skill.name}</p>
             </a>
           </motion.li>
         ))}
