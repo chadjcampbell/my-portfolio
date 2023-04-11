@@ -1,14 +1,15 @@
 import { BsLinkedin, BsGithub } from "react-icons/bs";
-import "./header.css";
+import styles from "./header.module.css";
 
 export const Header = () => {
   return (
-    <header>
+    <header className={styles["header-section"]}>
       <div>
         <a
           href="https://www.linkedin.com/in/chad-campbell-b6b59693/"
           target="_blank"
           aria-label="linked-in"
+          className={styles["header-a"]}
         >
           <BsGithub size="3rem" />
         </a>
@@ -16,6 +17,7 @@ export const Header = () => {
           href="https://github.com/chadjcampbell"
           target="_blank"
           aria-label="github"
+          className={styles["header-a"]}
         >
           <BsLinkedin size="3rem" />
         </a>

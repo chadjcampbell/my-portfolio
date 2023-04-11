@@ -78,7 +78,7 @@ export const Skills = () => {
                 aria-hidden="true"
                 className={`${styles["skill-icon"]} ${skill[0]}`}
               ></i>
-              <p>{skill[1]}</p>
+              <p className={styles["skill-name"]}>{skill[1]}</p>
             </a>
           </motion.li>
         ))}

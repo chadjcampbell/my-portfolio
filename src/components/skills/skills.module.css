@@ -35,6 +35,10 @@
   box-shadow: var(--box-shadow);
 }
 
+.skill-name {
+  color: aliceblue;
+}
+
 .each-skill {
   display: flex;
   flex-direction: column;

@@ -1,3 +1,5 @@
+import styles from "./projects.module.css";
+
 export const Projects = () => {
   return (
     <section className="projects">
