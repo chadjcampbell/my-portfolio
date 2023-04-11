@@ -1,3 +1,4 @@
+import { projectArray } from "./projectArray";
 import styles from "./projects.module.css";
 
 export const Projects = () => {
@@ -6,42 +7,40 @@ export const Projects = () => {
       <h2>Projects</h2>
       <div className="wrapper">
         <div className="accordion">
-          <div className="accordion-panel">
-            <h3 id="panel1-heading">
-              <button
-                id="accordion-trigger"
-                aria-controls="panel1-content"
-                aria-expanded="true"
+          {projectArray.map((project) => (
+            <div key={project.name} className="accordion-panel">
+              <h3 id={project.panel + "-heading"}>
+                <button
+                  id="accordion-trigger"
+                  aria-controls={project.panel + "-content"}
+                  aria-expanded="true"
+                >
+                  <span id={project.panel + "-title"}>Tally Yo</span>
+                  <img
+                    aria-hidden="true"
+                    className="accordion-icon"
+                    src={project.icon}
+                    alt={project.name}
+                  />
+                </button>
+              </h3>
+              <div
+                className="accordion-content"
+                id={project.panel + "-content"}
+                aria-labelledby={project.panel + "-heading"}
+                aria-hidden="true"
+                role="region"
               >
-                <span id="panel1-title">Tally Yo</span>
+                <p>{project.description}</p>
                 <img
-                  aria-hidden="true"
-                  className="accordion-icon"
-                  src="./tally-yo-icon.png"
-                  alt="tally-yo icon"
+                  className="accordion-image"
+                  src={project.background}
+                  alt={project.name}
                 />
-              </button>
-            </h3>
-            <div
-              className="accordion-content"
-              id="panel1-content"
-              aria-aria-labelledby="panel1-heading"
-              aria-hidden="true"
-              role="region"
-            >
-              <p>
-                Tally Yo is a chat app where you gain cash by chatting with
-                friends, or paper trading stocks. You can search, buy, and sell,
-                then check out how your picks are doing with portfolio
-                performance.
-              </p>
-              <img
-                className="accordion-image"
-                src="./tally-yo-ss.png"
-                alt="tally-yo screenshot"
-              />
+              </div>
             </div>
-          </div>
+          ))}
+          ;
         </div>
       </div>
     </section>
