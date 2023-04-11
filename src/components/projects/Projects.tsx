@@ -5,27 +5,27 @@ export const Projects = () => {
   return (
     <section className={styles.projects}>
       <h2>Projects</h2>
-      <div className="wrapper">
-        <div className="accordion">
+      <div className={styles.wrapper}>
+        <div className={styles.accordion}>
           {projectArray.map((project) => (
-            <div key={project.name} className="accordion-panel">
+            <div key={project.name} className={styles["accordion-panel"]}>
               <h3 id={project.panel + "-heading"}>
                 <button
-                  id="accordion-trigger"
+                  className={styles["accordion-trigger"]}
                   aria-controls={project.panel + "-content"}
                   aria-expanded="true"
                 >
-                  <span id={project.panel + "-title"}>Tally Yo</span>
+                  <span id={project.panel + "-title"}>{project.name}</span>
                   <img
                     aria-hidden="true"
-                    className="accordion-icon"
+                    className={styles["accordion-icon"]}
                     src={project.icon}
                     alt={project.name}
                   />
                 </button>
               </h3>
               <div
-                className="accordion-content"
+                className={styles["accordion-content"]}
                 id={project.panel + "-content"}
                 aria-labelledby={project.panel + "-heading"}
                 aria-hidden="true"
@@ -33,14 +33,13 @@ export const Projects = () => {
               >
                 <p>{project.description}</p>
                 <img
-                  className="accordion-image"
+                  className={styles["accordion-image"]}
                   src={project.background}
                   alt={project.name}
                 />
               </div>
             </div>
           ))}
-          ;
         </div>
       </div>
     </section>
