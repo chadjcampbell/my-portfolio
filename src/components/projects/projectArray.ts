@@ -31,4 +31,12 @@ export const projectArray = [
     description:
       "Nintendo Memory is a single page memory card game. The cards are remounted randomly after every selection. It keeps track of current score and personal best in the header.",
   },
+  {
+    panel: "panel5",
+    name: "Battleship JS",
+    icon: "./battleship-icon.png",
+    background: "./battleship-ss.png",
+    description:
+      "Battleship JS is based off of the popular game, played against AI, with custom or random ship placemant. It was built with all vanilla JS and CSS. OOP principals were used for the games logic.",
+  },
 ];

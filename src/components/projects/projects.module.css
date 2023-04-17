@@ -23,7 +23,7 @@
 .accordion-panel {
   position: relative;
   isolation: isolate;
-  flex-basis: 100px;
+  flex-basis: calc(var(--button-size) + var(--panel-padding));
   overflow: hidden;
   padding: var(--panel-padding);
 }
