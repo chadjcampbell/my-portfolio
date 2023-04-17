@@ -1,13 +1,21 @@
 import { projectArray } from "./projectArray";
 import styles from "./projects.module.css";
 
+export type Project = {
+  panel: string;
+  name: string;
+  icon: string;
+  background: string;
+  description: string;
+};
+
 export const Projects = () => {
   return (
     <section className={styles.projects}>
       <h2>Projects</h2>
       <div className={styles.wrapper}>
         <div className={styles.accordion}>
-          {projectArray.map((project) => (
+          {projectArray.map((project: Project) => (
             <div key={project.name} className={styles["accordion-panel"]}>
               <h3 id={project.panel + "-heading"}>
                 <button
