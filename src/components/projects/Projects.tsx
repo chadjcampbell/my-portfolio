@@ -1,4 +1,4 @@
-import { BsGithub, BsLinkedin } from "react-icons/bs";
+import { BsGithub, BsTvFill } from "react-icons/bs";
 import { projectArray } from "./projectArray";
 import styles from "./projects.module.css";
 
@@ -6,6 +6,8 @@ export type Project = {
   panel: string;
   hidden: boolean;
   name: string;
+  code: string;
+  preview: string;
   icon: string;
   background: string;
   description: string;
@@ -19,26 +21,38 @@ export const Projects = () => {
         <div className={styles.accordion}>
           {projectArray.map((project: Project) => (
             <div key={project.name} className={styles["accordion-panel"]}>
-              <h3 id={project.panel + "-heading"}>
-                <button
-                  className={styles["accordion-trigger"]}
-                  aria-controls={project.panel + "-content"}
-                  aria-expanded={!project.hidden}
-                >
-                  <span
-                    className={styles["project-title"]}
-                    id={project.panel + "-title"}
+              <div className={styles["card-header"]}>
+                <h3 id={project.panel + "-heading"}>
+                  <button
+                    className={styles["accordion-trigger"]}
+                    aria-controls={project.panel + "-content"}
+                    aria-expanded={!project.hidden}
                   >
-                    {project.name}
-                  </span>
-                  <img
-                    aria-hidden="true"
-                    className={styles["accordion-icon"]}
-                    src={project.icon}
-                    alt={project.name}
-                  />
-                </button>
-              </h3>
+                    <span
+                      className={styles["project-title"]}
+                      id={project.panel + "-title"}
+                    >
+                      {project.name}
+                    </span>
+                    <img
+                      aria-hidden="true"
+                      className={styles["accordion-icon"]}
+                      src={project.icon}
+                      alt={project.name}
+                    />
+                  </button>
+                </h3>
+                <div className={styles["project-links"]}>
+                  <a href={project.code} target="_blank" aria-label="linked-in">
+                    <BsGithub size="1.5rem" />
+                    Code
+                  </a>
+                  <a href={project.preview} target="_blank" aria-label="github">
+                    <BsTvFill size="1.75rem" />
+                    Live
+                  </a>
+                </div>
+              </div>
               <div
                 className={styles["accordion-content"]}
                 id={project.panel + "-content"}
@@ -48,24 +62,6 @@ export const Projects = () => {
               >
                 <div className={styles.description}>
                   <p>{project.description}</p>
-                  <div className={styles["project-links"]}>
-                    <a
-                      href="https://www.linkedin.com/in/chad-campbell-b6b59693/"
-                      target="_blank"
-                      aria-label="linked-in"
-                    >
-                      <BsGithub size="1.5rem" />
-                      Code
-                    </a>
-                    <a
-                      href="https://github.com/chadjcampbell"
-                      target="_blank"
-                      aria-label="github"
-                    >
-                      <BsLinkedin size="1.5rem" />
-                      View Live
-                    </a>
-                  </div>
                 </div>
                 <img
                   className={styles["accordion-image"]}

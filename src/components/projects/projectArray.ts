@@ -3,6 +3,8 @@ export const projectArray = [
     panel: "panel1",
     hidden: false,
     name: "Tally Yo",
+    code: "https://github.com/chadjcampbell/tally-yo",
+    preview: "https://chadjcampbell.github.io/tally-yo/",
     icon: "./tally-yo-icon.png",
     background: "./tally-yo-ss.png",
     description:
@@ -12,6 +14,8 @@ export const projectArray = [
     panel: "panel2",
     hidden: true,
     name: "Family Game Night",
+    code: "https://github.com/chadjcampbell/familyGameNight",
+    preview: "https://family-game-night.onrender.com/",
     icon: "./family-game-night-icon.png",
     background: "./family-game-night-ss.png",
     description:
@@ -21,6 +25,8 @@ export const projectArray = [
     panel: "panel3",
     hidden: true,
     name: "Sweet Deals",
+    code: "https://github.com/chadjcampbell/shopping-cart",
+    preview: "https://chadjcampbell.github.io/shopping-cart/",
     icon: "./sweet-deals-icon.jpg",
     background: "./sweet-deals-ss.png",
     description:
@@ -30,6 +36,8 @@ export const projectArray = [
     panel: "panel4",
     hidden: true,
     name: "Nintendo Memory",
+    code: "https://github.com/chadjcampbell/memory-card",
+    preview: "https://chadjcampbell.github.io/memory-card/",
     icon: "./nintendo-memory-icon.png",
     background: "./nintendo-memory-ss.png",
     description:
@@ -39,6 +47,8 @@ export const projectArray = [
     panel: "panel5",
     hidden: true,
     name: "Battleship JS",
+    code: "https://github.com/chadjcampbell/battleshipJS",
+    preview: "https://chadjcampbell.github.io/battleshipJS/",
     icon: "./battleship-icon.png",
     background: "./battleship-ss.png",
     description:

@@ -48,17 +48,16 @@
 }
 
 .accordion-trigger {
-  background: transparent;
   border: 0;
   display: flex;
   align-items: center;
   flex-direction: row-reverse;
-  gap: 1rem;
   background-color: white;
   border-radius: calc((var(--button-size) + (var(--panel-padding) * 2) / 2));
   padding-right: 1rem;
   box-shadow: var(--box-shadow);
   transition: all 0.3s ease-in-out;
+  margin-bottom: 1rem;
 }
 
 .accordion-trigger:hover,
@@ -80,29 +79,40 @@
   font-size: 1.5rem;
 }
 
-.description {
+.card-header {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.description {
+  display: flex;
+  align-items: flex-start;
   color: black;
   background-color: white;
   width: 100%;
   border-radius: calc((var(--button-size) + (var(--panel-padding) * 2) / 2));
-  padding: 1.5rem;
+  padding: 1em 2em 2em;
 }
 
 .project-links {
   display: flex;
-  align-items: flex-start;
-  width: 100%;
+  flex-wrap: wrap;
 }
 
 .project-links a {
+  margin-right: 1rem;
   color: black;
+  background-color: white;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
+  border-radius: calc((var(--button-size) + (var(--panel-padding) * 2) / 2));
+  padding: 0.5rem 1rem;
+  box-shadow: var(--box-shadow);
+  transition: all 0.3s ease-in-out;
+}
+
+.project-links svg {
+  margin-right: 1rem;
 }
