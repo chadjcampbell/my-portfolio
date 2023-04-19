@@ -23,9 +23,14 @@
 .accordion-panel {
   position: relative;
   isolation: isolate;
-  flex-basis: calc(var(--button-size) + var(--panel-padding));
+  flex-basis: calc(var(--button-size) + (var(--panel-padding) * 2));
   overflow: hidden;
   padding: var(--panel-padding);
+  border-radius: calc((var(--button-size) + (var(--panel-padding) * 2) / 2));
+}
+
+.accordion-panel:has([aria-expanded="true"]) {
+  flex-basis: clamp(15rem, 50vh, 30rem);
 }
 
 .accordion-image {
@@ -53,4 +58,9 @@
   aspect-ratio: 1/1;
   padding: 0.75rem;
   border-radius: 50%;
+  margin: 1rem;
+}
+
+.project-title {
+  font-size: 1.5rem;
 }

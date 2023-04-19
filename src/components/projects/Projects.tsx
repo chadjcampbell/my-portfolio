@@ -23,7 +23,12 @@ export const Projects = () => {
                   aria-controls={project.panel + "-content"}
                   aria-expanded="true"
                 >
-                  <span id={project.panel + "-title"}>{project.name}</span>
+                  <span
+                    className={styles["project-title"]}
+                    id={project.panel + "-title"}
+                  >
+                    {project.name}
+                  </span>
                   <img
                     aria-hidden="true"
                     className={styles["accordion-icon"]}
