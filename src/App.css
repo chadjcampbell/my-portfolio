@@ -47,6 +47,10 @@ main {
   align-items: center;
 }
 
+h2 {
+  margin-bottom: 1em;
+}
+
 a {
   display: inline-block;
   transition: all 0.3s ease-in-out;

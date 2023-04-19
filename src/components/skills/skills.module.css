@@ -7,10 +7,6 @@
   max-width: 70rem;
 }
 
-.title {
-  margin-bottom: 1em;
-}
-
 .skill-container {
   display: flex;
   align-items: center;

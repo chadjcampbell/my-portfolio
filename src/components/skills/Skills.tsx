@@ -25,7 +25,7 @@ export const Skills = () => {
 
   return (
     <section className={styles["skills-section"]}>
-      <h2 className={styles.title}>Skills</h2>
+      <h2>Skills</h2>
       <motion.ul
         className={styles["skill-container"]}
         variants={container}
