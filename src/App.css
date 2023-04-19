@@ -11,7 +11,12 @@
 :root {
   --color-primary: #4db5ff;
   --color-secondary: rgba(77, 181, 255, 0.4);
-  --color-bg-primary: #1f1f38;
+  --color-bg-primary: linear-gradient(
+    109.6deg,
+    rgb(36, 45, 57) 11.2%,
+    rgb(16, 37, 60) 51.2%,
+    rgb(0, 0, 0) 98.6%
+  );
   --color-bg-secondary: #2c2c6c;
   --color-white: #fff;
   --color-light: rgba(255, 255, 255, 0.6);
@@ -24,7 +29,7 @@
 
 body {
   font-family: "Barlow", sans-serif;
-  background-color: var(--color-bg-primary);
+  background-image: var(--color-bg-primary);
   color: var(--color-white);
   line-height: 1.5;
   font-size: larger;
