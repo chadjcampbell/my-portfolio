@@ -29,13 +29,40 @@ export const Projects = () => {
     setProjectsView(newProjects);
   };
 
+  const container = {
+    hidden: { opacity: 1, scale: 0 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        delayChildren: 0.3,
+        staggerChildren: 0.2,
+      },
+    },
+  };
+
+  const item = {
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+    },
+  };
+
   return (
     <section className={styles.projects}>
       <h2>Projects</h2>
       <div className={styles.wrapper}>
-        <div className={styles.accordion}>
+        <motion.div
+          className={styles.accordion}
+          variants={container}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+        >
           {projectsView.map((project: Project) => (
             <motion.div
+              variants={item}
               key={project.name}
               className={styles["accordion-panel"]}
             >
@@ -112,7 +139,7 @@ export const Projects = () => {
               </div>
             </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );
