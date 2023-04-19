@@ -1,3 +1,4 @@
+import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { projectArray } from "./projectArray";
 import styles from "./projects.module.css";
 
@@ -45,7 +46,27 @@ export const Projects = () => {
                 aria-hidden={project.hidden}
                 role="region"
               >
-                <p>{project.description}</p>
+                <div className={styles.description}>
+                  <p>{project.description}</p>
+                  <div className={styles["project-links"]}>
+                    <a
+                      href="https://www.linkedin.com/in/chad-campbell-b6b59693/"
+                      target="_blank"
+                      aria-label="linked-in"
+                    >
+                      <BsGithub size="1.5rem" />
+                      Code
+                    </a>
+                    <a
+                      href="https://github.com/chadjcampbell"
+                      target="_blank"
+                      aria-label="github"
+                    >
+                      <BsLinkedin size="1.5rem" />
+                      View Live
+                    </a>
+                  </div>
+                </div>
                 <img
                   className={styles["accordion-image"]}
                   src={project.background}

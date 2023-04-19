@@ -21,6 +21,9 @@
 }
 
 .accordion-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   position: relative;
   isolation: isolate;
   flex-basis: calc(var(--button-size) + (var(--panel-padding) * 2));
@@ -30,7 +33,7 @@
 }
 
 .accordion-panel:has([aria-expanded="true"]) {
-  flex-basis: clamp(15rem, 50vh, 30rem);
+  flex-basis: clamp(15rem, 80vh, 40rem);
   padding: calc(var(--panel-padding) * 2);
 }
 
@@ -75,4 +78,31 @@
 
 .project-title {
   font-size: 1.5rem;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  background-color: white;
+  width: 100%;
+  border-radius: calc((var(--button-size) + (var(--panel-padding) * 2) / 2));
+  padding: 1.5rem;
+}
+
+.project-links {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.project-links a {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
 }
