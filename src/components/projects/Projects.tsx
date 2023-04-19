@@ -3,6 +3,7 @@ import styles from "./projects.module.css";
 
 export type Project = {
   panel: string;
+  hidden: boolean;
   name: string;
   icon: string;
   background: string;
@@ -21,7 +22,7 @@ export const Projects = () => {
                 <button
                   className={styles["accordion-trigger"]}
                   aria-controls={project.panel + "-content"}
-                  aria-expanded="true"
+                  aria-expanded={!project.hidden}
                 >
                   <span
                     className={styles["project-title"]}
@@ -41,7 +42,7 @@ export const Projects = () => {
                 className={styles["accordion-content"]}
                 id={project.panel + "-content"}
                 aria-labelledby={project.panel + "-heading"}
-                aria-hidden="true"
+                aria-hidden={project.hidden}
                 role="region"
               >
                 <p>{project.description}</p>

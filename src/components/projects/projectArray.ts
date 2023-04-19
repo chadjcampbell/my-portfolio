@@ -1,6 +1,7 @@
 export const projectArray = [
   {
     panel: "panel1",
+    hidden: false,
     name: "Tally Yo",
     icon: "./tally-yo-icon.png",
     background: "./tally-yo-ss.png",
@@ -9,6 +10,7 @@ export const projectArray = [
   },
   {
     panel: "panel2",
+    hidden: true,
     name: "Family Game Night",
     icon: "./family-game-night-icon.png",
     background: "./family-game-night-ss.png",
@@ -17,6 +19,7 @@ export const projectArray = [
   },
   {
     panel: "panel3",
+    hidden: true,
     name: "Sweet Deals",
     icon: "./sweet-deals-icon.jpg",
     background: "./sweet-deals-ss.png",
@@ -25,6 +28,7 @@ export const projectArray = [
   },
   {
     panel: "panel4",
+    hidden: true,
     name: "Nintendo Memory",
     icon: "./nintendo-memory-icon.png",
     background: "./nintendo-memory-ss.png",
@@ -33,6 +37,7 @@ export const projectArray = [
   },
   {
     panel: "panel5",
+    hidden: true,
     name: "Battleship JS",
     icon: "./battleship-icon.png",
     background: "./battleship-ss.png",
