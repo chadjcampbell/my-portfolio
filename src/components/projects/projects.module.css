@@ -31,6 +31,7 @@
 
 .accordion-panel:has([aria-expanded="true"]) {
   flex-basis: clamp(15rem, 50vh, 30rem);
+  padding: calc(var(--panel-padding) * 2);
 }
 
 .accordion-image {
@@ -50,6 +51,17 @@
   align-items: center;
   flex-direction: row-reverse;
   gap: 1rem;
+  background-color: white;
+  border-radius: calc((var(--button-size) + (var(--panel-padding) * 2) / 2));
+  padding-right: 1rem;
+  box-shadow: var(--box-shadow);
+  transition: all 0.3s ease-in-out;
+}
+
+.accordion-trigger:hover,
+.accordion-trigger:focus {
+  transform: scale(1.1) translateX(1rem);
+  cursor: pointer;
 }
 
 .accordion-icon {
@@ -58,7 +70,7 @@
   aspect-ratio: 1/1;
   padding: 0.75rem;
   border-radius: 50%;
-  margin: 1rem;
+  margin: cal(var(--panel-padding) * 2);
 }
 
 .project-title {
