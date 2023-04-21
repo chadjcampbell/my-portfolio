@@ -3,4 +3,26 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  min-height: 50vh;
+  max-width: 70rem;
+  margin: 1rem;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  max-width: 30rem;
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  max-width: 30rem;
 }
