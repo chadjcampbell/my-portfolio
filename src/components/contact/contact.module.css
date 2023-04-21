@@ -4,19 +4,25 @@
   align-items: center;
   justify-content: center;
   min-height: 70vh;
+  width: 100%;
   max-width: 70rem;
+  margin-bottom: 3rem;
 }
 
 .wrapper {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: 1rem;
 }
 
 .form {
   display: flex;
   flex-direction: column;
+  flex: 1 1 auto;
 }
 
 .form input {
@@ -47,4 +53,5 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  flex: 1 1 auto;
 }
