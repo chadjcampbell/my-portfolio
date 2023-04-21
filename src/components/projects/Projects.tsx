@@ -74,10 +74,7 @@ export const Projects = () => {
                     aria-expanded={!project.hidden}
                     onClick={() => setActive(project.name)}
                   >
-                    <span
-                      className={styles["project-title"]}
-                      id={project.panel + "-title"}
-                    >
+                    <span className={styles["project-title"]}>
                       {project.name}
                     </span>
                     <img
