@@ -1,36 +1,45 @@
-.footer {
+.section {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   min-height: 70vh;
   max-width: 70rem;
-  margin: 1rem;
 }
 
-.section {
+.wrapper {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 
 .form {
   display: flex;
   flex-direction: column;
-  width: 30rem;
 }
 
 .form input {
   margin-bottom: 2rem;
   font-size: 18px;
-  padding: 0.5rem;
+  padding: 1rem;
+  border-radius: 4rem;
 }
 
 .form textarea {
   margin-bottom: 2rem;
   font-size: 18px;
-  padding: 0.5rem;
+  padding: 1rem;
+  border-radius: 2rem;
+  height: 8rem;
+}
+
+.form button {
+  background-color: green;
+  color: white;
+  font-size: 18px;
+  padding: 1rem;
+  border-radius: 2rem;
 }
 
 .socials {
@@ -38,5 +47,4 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 30rem;
 }

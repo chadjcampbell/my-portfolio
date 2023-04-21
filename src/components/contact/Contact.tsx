@@ -3,26 +3,17 @@ import styles from "./contact.module.css";
 
 export const Contact = () => {
   return (
-    <footer className={styles.footer}>
+    <section className={styles.section}>
       <h2>Contact</h2>
-      <section className={styles.section}>
+      <div className={styles.wrapper}>
         <form className={styles.form} action="">
           <label htmlFor="name">Name</label>
-          <input type="text" id="name" name="name" placeholder="Your name..." />
+          <input type="text" id="name" name="name" />
           <label htmlFor="email">Email</label>
-          <input
-            type="text"
-            id="email"
-            name="email"
-            placeholder="Your email..."
-          />
+          <input type="text" id="email" name="email" />
           <label htmlFor="subject">Message</label>
-          <textarea
-            id="message"
-            name="message"
-            placeholder="Write something..."
-          ></textarea>
-          <input type="submit" value="Submit" />
+          <textarea id="message" name="message"></textarea>
+          <button type="submit">Submit</button>
         </form>
         <div className={styles.socials}>
           <div className={styles.icons}>
@@ -55,7 +46,7 @@ export const Contact = () => {
             <h4>Email: chadjcampbell@gmail.com</h4>
           </div>
         </div>
-      </section>
-    </footer>
+      </div>
+    </section>
   );
 };
