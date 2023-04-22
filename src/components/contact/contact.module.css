@@ -6,7 +6,7 @@
   min-height: 70vh;
   width: 100%;
   max-width: 70rem;
-  margin: 3rem 0;
+  margin: 3rem 0 6rem 0;
 }
 
 .wrapper {
@@ -55,6 +55,7 @@
   align-items: center;
   justify-content: center;
   flex: 1 1 auto;
+  margin-bottom: auto;
 }
 
 .icons {
