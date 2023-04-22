@@ -50,7 +50,7 @@ export const Projects = () => {
   };
 
   return (
-    <section className={styles.projects}>
+    <section id="projects" className={styles.projects}>
       <h2>Projects</h2>
       <div className={styles.wrapper}>
         <motion.div

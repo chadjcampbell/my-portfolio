@@ -4,7 +4,7 @@ import Socials from "./Socials";
 
 export const Contact = () => {
   return (
-    <section className={styles.section}>
+    <section id="contact" className={styles.section}>
       <h2>Contact</h2>
       <div className={styles.wrapper}>
         <ContactForm />
