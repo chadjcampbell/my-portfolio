@@ -1,6 +1,5 @@
 import { Header } from "../header/Header";
 import styles from "./about.module.css";
-import { BsArrowDownCircleFill } from "react-icons/bs";
 
 export const About = () => {
   return (
