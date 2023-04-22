@@ -11,7 +11,7 @@ export const Header = () => {
           aria-label="linked-in"
           className={styles["header-a"]}
         >
-          <BsGithub size="3rem" />
+          <BsGithub size="2.5rem" />
         </a>
         <a
           href="https://github.com/chadjcampbell"
@@ -19,7 +19,7 @@ export const Header = () => {
           aria-label="github"
           className={styles["header-a"]}
         >
-          <BsLinkedin size="3rem" />
+          <BsLinkedin size="2.5rem" />
         </a>
       </div>
     </header>
