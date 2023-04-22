@@ -8,7 +8,7 @@ const Socials = () => {
         <a
           href="https://www.linkedin.com/in/chad-campbell-b6b59693/"
           target="_blank"
-          aria-label="linked-in"
+          aria-label="github"
           className={styles["social-icon"]}
         >
           <BsGithub size="3rem" />
@@ -16,7 +16,7 @@ const Socials = () => {
         <a
           href="https://github.com/chadjcampbell"
           target="_blank"
-          aria-label="github"
+          aria-label="linked-in"
           className={styles["social-icon"]}
         >
           <BsLinkedin size="3rem" />
