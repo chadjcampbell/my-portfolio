@@ -1,0 +1,17 @@
+.navbar {
+  background: rgba(0, 0, 0, 0.5);
+  width: max-content;
+  padding: 1rem 2rem;
+  display: flex;
+  gap: 2rem;
+  z-index: 1;
+  position: fixed;
+  bottom: 2rem;
+  border-radius: 3rem;
+  backdrop-filter: blur(15px);
+}
+
+.navbar a {
+  color: white;
+  font-size: 20px;
+}
