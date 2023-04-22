@@ -34,7 +34,7 @@ const Socials = () => {
       >
         <motion.a
           variants={item}
-          href="https://www.linkedin.com/in/chad-campbell-b6b59693/"
+          href="https://github.com/chadjcampbell"
           target="_blank"
           aria-label="github"
           className={styles["social-icon"]}
@@ -43,7 +43,7 @@ const Socials = () => {
         </motion.a>
         <motion.a
           variants={item}
-          href="https://github.com/chadjcampbell"
+          href="https://www.linkedin.com/in/chad-campbell-b6b59693/"
           target="_blank"
           aria-label="linked-in"
           className={styles["social-icon"]}
