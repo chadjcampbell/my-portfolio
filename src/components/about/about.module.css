@@ -16,6 +16,7 @@
   margin: 1rem;
   border-radius: 50%;
   width: 40vh;
+  max-width: 95vw;
   box-shadow: var(--box-shadow);
 }
 
