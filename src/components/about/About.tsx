@@ -21,7 +21,7 @@ export const About = () => {
     if (index === aboutArray.length - 1) return;
     setTimeout(() => {
       setIndex(index + 1);
-    }, 2000);
+    }, 1500);
   }, [header]);
 
   return (
@@ -44,10 +44,10 @@ const AnimatedHeader = ({ header }: AnimatedHeaderProps) => {
   return (
     <motion.p
       key={header}
-      initial={{ opacity: 0, scale: 0.5 }}
-      animate={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.5 }}
-      className={styles["about-p"]}
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.75 }}
+      className={styles["animated-header"]}
     >
       {header}
     </motion.p>

@@ -1,10 +1,16 @@
+import { motion } from "framer-motion";
 import styles from "./nav.module.css";
 import { AiOutlineHome, AiOutlineDesktop, AiOutlineMail } from "react-icons/ai";
 import { VscTools } from "react-icons/vsc";
 
 export const Nav = () => {
   return (
-    <nav className={styles.navbar}>
+    <motion.nav
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, delay: 4.5 }}
+      className={styles.navbar}
+    >
       <a href="#">
         <AiOutlineHome />
         <p>Home</p>
@@ -21,6 +27,6 @@ export const Nav = () => {
         <AiOutlineMail />
         <p>Contact</p>
       </a>
-    </nav>
+    </motion.nav>
   );
 };
