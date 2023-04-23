@@ -1,7 +1,7 @@
 import { BsGithub, BsTvFill } from "react-icons/bs";
 import { projectArray } from "./projectArray";
 import styles from "./projects.module.css";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { motion } from "framer-motion";
 
 export type Project = {
@@ -17,6 +17,7 @@ export type Project = {
 
 export const Projects = () => {
   const [projectsView, setProjectsView] = useState<Project[]>(projectArray);
+  const ref = useRef<HTMLDivElement>(null);
 
   const setActive = (name: string) => {
     const newProjects = projectsView.map((project: Project) => {
@@ -50,8 +51,10 @@ export const Projects = () => {
   };
 
   return (
-    <section id="projects" className={styles.projects}>
-      <h2>Projects</h2>
+    <section className={styles.projects}>
+      <h2 id="projects" ref={ref}>
+        Projects
+      </h2>
       <div className={styles.wrapper}>
         <motion.div
           className={styles.accordion}

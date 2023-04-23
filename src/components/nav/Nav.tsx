@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import styles from "./nav.module.css";
 import { AiOutlineHome, AiOutlineDesktop, AiOutlineMail } from "react-icons/ai";
 import { VscTools } from "react-icons/vsc";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export type NavItem = {
   name: string;
@@ -12,7 +12,7 @@ export type NavItem = {
 };
 
 const navArray: NavItem[] = [
-  { name: "Home", component: <AiOutlineHome />, href: "#", active: true },
+  { name: "Home", component: <AiOutlineHome />, href: "#hero", active: true },
   { name: "Skills", component: <VscTools />, href: "#skills", active: false },
   {
     name: "Projects",
@@ -41,6 +41,39 @@ export const Nav = () => {
     });
     setActiveNav(newNav);
   };
+
+  useEffect(() => {
+    const options = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.5,
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const id = entry.target.id;
+          setActiveNav((prev) => {
+            return prev.map((navItem) => {
+              if (navItem.href === `#${id}`) {
+                return { ...navItem, active: true };
+              } else {
+                return { ...navItem, active: false };
+              }
+            });
+          });
+        }
+      });
+    }, options);
+
+    const elements = document.querySelectorAll("[id]");
+    elements.forEach((element) => {
+      observer.observe(element);
+    });
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <motion.nav
       initial={{ opacity: 0, y: 20 }}
