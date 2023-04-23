@@ -12,11 +12,17 @@
 }
 
 .navbar a {
+  padding: 0.75rem;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
   font-size: 20px;
+  border-radius: 3rem;
+}
+
+.navbar a.active {
+  background: rgba(0, 0, 0, 0.7);
 }
 
 .navbar a p {
