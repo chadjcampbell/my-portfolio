@@ -1,7 +1,16 @@
+import { useState } from "react";
 import { Header } from "../header/Header";
 import styles from "./about.module.css";
 
 export const About = () => {
+  const aboutArray = [
+    "Family Man",
+    "Gamer",
+    "Lifelong Learner",
+    "Fullstack Developer",
+  ];
+  const [headerArray, setHeaderArray] = useState<string[]>(aboutArray);
+  function changeHeader(): void {}
   return (
     <div className={styles.hero}>
       <Header />
