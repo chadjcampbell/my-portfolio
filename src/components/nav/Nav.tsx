@@ -66,7 +66,7 @@ export const Nav = () => {
       });
     }, options);
 
-    const elements = document.querySelectorAll("[id]");
+    const elements = document.querySelectorAll(".observe");
     elements.forEach((element) => {
       observer.observe(element);
     });

@@ -26,7 +26,11 @@ export const Skills = () => {
   };
 
   return (
-    <section ref={ref} id="skills" className={styles["skills-section"]}>
+    <section
+      ref={ref}
+      id="skills"
+      className={`${styles["skills-section"]} observe`}
+    >
       <h2>Skills</h2>
       <motion.ul
         className={styles["skill-container"]}

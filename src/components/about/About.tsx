@@ -26,7 +26,7 @@ export const About = () => {
   }, [header]);
 
   return (
-    <div ref={ref} id="hero" className={styles.hero}>
+    <div ref={ref} id="hero" className={`${styles.hero} observe`}>
       <Header />
       <section className={styles["about-section"]}>
         <p>Hello, I'm</p>

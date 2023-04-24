@@ -51,10 +51,8 @@ export const Projects = () => {
   };
 
   return (
-    <section className={styles.projects}>
-      <h2 id="projects" ref={ref}>
-        Projects
-      </h2>
+    <section id="projects" className={`${styles.projects} observe`}>
+      <h2 ref={ref}>Projects</h2>
       <div className={styles.wrapper}>
         <motion.div
           className={styles.accordion}
