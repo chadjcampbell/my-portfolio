@@ -1,4 +1,3 @@
-import { useRef } from "react";
 import styles from "./contact.module.css";
 import ContactForm from "./ContactForm";
 import Socials from "./Socials";
