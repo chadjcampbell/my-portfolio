@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { Header } from "../header/Header";
 import styles from "./about.module.css";
 import { motion } from "framer-motion";
@@ -12,7 +12,6 @@ export const About = () => {
   ];
   const [header, setHeader] = useState<string | null>(null);
   const [index, setIndex] = useState(0);
-  const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     setHeader(aboutArray[index]);
@@ -26,7 +25,7 @@ export const About = () => {
   }, [header]);
 
   return (
-    <div ref={ref} id="hero" className={`${styles.hero} observe`}>
+    <div id="hero" className={`${styles.hero} observe`}>
       <Header />
       <section className={styles["about-section"]}>
         <p>Hello, I'm</p>

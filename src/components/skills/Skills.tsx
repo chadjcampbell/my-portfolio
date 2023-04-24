@@ -1,10 +1,8 @@
 import styles from "./skills.module.css";
 import { motion } from "framer-motion";
 import { skillArray } from "./skillArray";
-import { useRef } from "react";
 
 export const Skills = () => {
-  const ref = useRef<HTMLDivElement>(null);
   const container = {
     hidden: { opacity: 1, scale: 0 },
     visible: {
@@ -26,11 +24,7 @@ export const Skills = () => {
   };
 
   return (
-    <section
-      ref={ref}
-      id="skills"
-      className={`${styles["skills-section"]} observe`}
-    >
+    <section id="skills" className={`${styles["skills-section"]} observe`}>
       <h2>Skills</h2>
       <motion.ul
         className={styles["skill-container"]}
