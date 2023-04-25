@@ -52,12 +52,11 @@ const ContactForm = () => {
   return (
     <>
       <form ref={form} onSubmit={sendEmail} className={styles.form}>
-        <h4></h4>
         <label htmlFor="name">Name</label>
         <input type="text" id="name" name="from_name" required />
         <label htmlFor="email">Email</label>
         <input type="text" id="email" name="from_email" required />
-        <label htmlFor="subject">Message</label>
+        <label htmlFor="message">Message</label>
         <textarea id="message" name="message" required />
         <button type="submit">Submit</button>
       </form>

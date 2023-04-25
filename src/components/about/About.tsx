@@ -31,7 +31,11 @@ export const About = () => {
         <p>Hello, I'm</p>
         <h1 className={styles["about-h1"]}>Chad J Campbell</h1>
         <AnimatedHeader header={header} />
-        <img className={styles["about-img"]} src="/chadjcampbell.jpeg" />
+        <img
+          className={styles["about-img"]}
+          alt="Chad Campbell Profile Picture"
+          src="/chadjcampbell.jpeg"
+        />
       </section>
     </div>
   );
