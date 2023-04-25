@@ -79,75 +79,76 @@ export const Projects = () => {
               key={project.name}
               className={styles["accordion-panel"]}
             >
-              <div ref={(el) => (projectRefs.current[i] = el)}>
-                <div className={styles["card-header"]}>
-                  <h3 id={project.panel + "-heading"}>
-                    <button
-                      className={styles["accordion-trigger"]}
-                      aria-controls={project.panel + "-content"}
-                      aria-expanded={!project.hidden}
-                      onClick={() => setActive(project.name)}
+              <div
+                ref={(el) => (projectRefs.current[i] = el)}
+                className={styles["card-header"]}
+              >
+                <h3 id={project.panel + "-heading"}>
+                  <button
+                    className={styles["accordion-trigger"]}
+                    aria-controls={project.panel + "-content"}
+                    aria-expanded={!project.hidden}
+                    onClick={() => setActive(project.name)}
+                  >
+                    <span className={styles["project-title"]}>
+                      {project.name}
+                    </span>
+                    <img
+                      aria-hidden="true"
+                      className={styles["accordion-icon"]}
+                      src={project.icon}
+                      alt={project.name}
+                    />
+                  </button>
+                </h3>
+                {!project.hidden && (
+                  <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 1, delay: 0.5 }}
+                    className={styles["project-links"]}
+                  >
+                    <a
+                      href={project.code}
+                      target="_blank"
+                      aria-label="linked-in"
                     >
-                      <span className={styles["project-title"]}>
-                        {project.name}
-                      </span>
-                      <img
-                        aria-hidden="true"
-                        className={styles["accordion-icon"]}
-                        src={project.icon}
-                        alt={project.name}
-                      />
-                    </button>
-                  </h3>
-                  {!project.hidden && (
-                    <motion.div
-                      initial={{ opacity: 0 }}
-                      animate={{ opacity: 1 }}
-                      transition={{ duration: 1, delay: 0.5 }}
-                      className={styles["project-links"]}
+                      <BsGithub size="1.5rem" />
+                      Code
+                    </a>
+                    <a
+                      href={project.preview}
+                      target="_blank"
+                      aria-label="github"
                     >
-                      <a
-                        href={project.code}
-                        target="_blank"
-                        aria-label="linked-in"
-                      >
-                        <BsGithub size="1.5rem" />
-                        Code
-                      </a>
-                      <a
-                        href={project.preview}
-                        target="_blank"
-                        aria-label="github"
-                      >
-                        <BsTvFill size="1.75rem" />
-                        Live
-                      </a>
-                    </motion.div>
-                  )}
-                </div>
-                <div
-                  className={styles["accordion-content"]}
-                  id={project.panel + "-content"}
-                  aria-labelledby={project.panel + "-heading"}
-                  aria-hidden={project.hidden}
-                  role="region"
-                >
-                  {!project.hidden && (
-                    <motion.div
-                      initial={{ opacity: 0 }}
-                      animate={{ opacity: 1 }}
-                      transition={{ duration: 1, delay: 0.5 }}
-                      className={styles.description}
-                    >
-                      <p>{project.description}</p>
-                    </motion.div>
-                  )}
-                  <img
-                    className={styles["accordion-image"]}
-                    src={project.background}
-                    alt={project.name}
-                  />
-                </div>
+                      <BsTvFill size="1.75rem" />
+                      Live
+                    </a>
+                  </motion.div>
+                )}
+              </div>
+              <div
+                className={styles["accordion-content"]}
+                id={project.panel + "-content"}
+                aria-labelledby={project.panel + "-heading"}
+                aria-hidden={project.hidden}
+                role="region"
+              >
+                {!project.hidden && (
+                  <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 1, delay: 0.5 }}
+                    className={styles.description}
+                  >
+                    <p>{project.description}</p>
+                  </motion.div>
+                )}
+                <img
+                  className={styles["accordion-image"]}
+                  src={project.background}
+                  alt={project.name}
+                />
               </div>
             </motion.div>
           ))}
