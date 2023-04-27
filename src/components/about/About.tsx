@@ -3,13 +3,14 @@ import { Header } from "../header/Header";
 import styles from "./about.module.css";
 import { motion } from "framer-motion";
 
+export const aboutArray = [
+  "Family Man",
+  "Gamer",
+  "Lifelong Learner",
+  "Fullstack Developer",
+];
+
 export const About = () => {
-  const aboutArray = [
-    "Family Man",
-    "Gamer",
-    "Lifelong Learner",
-    "Fullstack Developer",
-  ];
   const [header, setHeader] = useState<string | null>(null);
   const [index, setIndex] = useState(0);
 
@@ -19,10 +20,11 @@ export const About = () => {
 
   useEffect(() => {
     if (index === aboutArray.length - 1) return;
-    setTimeout(() => {
+    const timeoutId = setTimeout(() => {
       setIndex(index + 1);
     }, 1500);
-  }, [header]);
+    return () => clearTimeout(timeoutId);
+  }, [index]);
 
   return (
     <div id="hero" className={`${styles.hero} observe`}>
