@@ -22,19 +22,19 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/chadjcampbell/tally-yo">
-    <img src="public/chat.png" alt="Logo" width="80" height="80">
+  <a href="https://github.com/chadjcampbell/my-portfolio">
+    <img src="public/favicon.ico" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">tally-yo</h3>
+<h3 align="center">my-portfolio</h3>
 
   <p align="center">
     <br />
-    <a target='_blank' href="https://chadjcampbell.github.io/tally-yo/"><strong>View Demo</strong></a>
+    <a target='_blank' href="https://chadjcampbell.com"><strong>View Demo</strong></a>
     ·
-    <a href="https://github.com/chadjcampbell/tally-yo/issues">Report Bug</a>
+    <a href="https://github.com/chadjcampbell/my-portfolio/issues">Report Bug</a>
     ·
-    <a href="https://github.com/chadjcampbell/tally-yo/issues">Request Feature</a>
+    <a href="https://github.com/chadjcampbell/my-portfolio/issues">Request Feature</a>
   </p>
 </div>
 
@@ -66,9 +66,9 @@
 ## About The Project
 
 <div align="center">
-    <img src="public/tyss1.png" alt="Screenshot" width="400" height="200">
+    <img src="screenshots/portfolioSS1.png" alt="Screenshot" width="400" height="200">
 </div>
-Tally Yo is a chat app where you gain cash by chatting with friends, or paper trading stocks. You can search, buy, and sell, then check out how you're picks are doing with portfolio performance.
+My personal portfolio to showcase my current skill set and projects I've built.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -76,11 +76,9 @@ Tally Yo is a chat app where you gain cash by chatting with friends, or paper tr
 
 - [![React][react.js]][react-url]
 - [![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)][typescript-url]
-- [![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)][router-url]
-- [![Chakra UI](https://img.shields.io/badge/chakra-%234ED1C5.svg?style=for-the-badge&logo=chakraui&logoColor=white)][chakra-url]
 - [![Framer](https://img.shields.io/badge/Framer-black?style=for-the-badge&logo=framer&logoColor=blue)][framer-url]
 - [![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)][vite-url]
-- [![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase)][firebase-url]
+- [![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)][css-url]
 - [![Vitest](https://img.shields.io/badge/Vitest-6E9F18.svg?style=for-the-badge&logo=Vitest&logoColor=white)][vitest-url]
 - [![TestingLibrary](https://img.shields.io/badge/Testing%20Library-E33332.svg?style=for-the-badge&logo=Testing-Library&logoColor=white)][testing-libray-url]
 
@@ -96,7 +94,7 @@ To get a local copy up and running follow these simple example steps.
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/chadjcampbell/tally-yo.git
+   git clone https://github.com/chadjcampbell/my-portfolio.git
    ```
 2. Install NPM packages
    ```sh
@@ -113,12 +111,12 @@ To get a local copy up and running follow these simple example steps.
 
 ## Features
 
-The stock info is fetched in the Buy/Sell route, from the YH Finance API that you can find (<a href="https://financeapi.net/">here</a>). Most of the chat functionality and user auth and state is handled by a context provider, while smaller functionality like the styling, tooltips, modals, etc. are plain useState. The back end is done with BaaS Firebase. The styling was done with Chakra UI components, with some custom overrides where needed. 30 day stock performance line chart and portfolio holding pie chart done with ChartJS.
+My personal portfolio to showcase my current skill set and projects I've built. Framer motion with staggered children is used to animate the icons and the accordion on scroll. The project accordion flex tranformations are vanilla CSS. The contact form is linked with emailJS.
 
 <div align="center">
-    <img src="public/tyss2.png" alt="Screenshot" width="400" height="200">
-    <img src="public/tyss3.png" alt="Screenshot" width="400" height="200">
-    <img src="public/tyss4.png" alt="Screenshot" width="400" height="200">
+    <img src="screenshots/portfolioSS2.png" alt="Screenshot" width="400" height="200">
+    <img src="screenshots/portfolioSS3.png" alt="Screenshot" width="400" height="200">
+    <img src="screenshots/portfolioSS4.png" alt="Screenshot" width="400" height="200">
 </div>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -127,9 +125,9 @@ The stock info is fetched in the Buy/Sell route, from the YH Finance API that yo
 
 ## Roadmap
 
-- [ ] Something to spend the "tally cash" on like collectibles
-- [ ] Trade collectibles?
-- [ ] More testing
+- [ ] Add test cases
+- [ ] More skills
+- [ ] MOAR projects
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -177,3 +175,4 @@ Email: chadjcampbell@gmail.com
 [firebase-url]: (https://firebase.google.com/)
 [vitest-url]: (https://vitest.dev/)
 [testing-libray-url]: (https://testing-library.com/)
+[css-url]: (https://css-tricks.com/)
