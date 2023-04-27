@@ -108,19 +108,11 @@ export const Projects = () => {
                     transition={{ duration: 1, delay: 0.5 }}
                     className={styles["project-links"]}
                   >
-                    <a
-                      href={project.code}
-                      target="_blank"
-                      aria-label="linked-in"
-                    >
+                    <a href={project.code} target="_blank">
                       <BsGithub size="1.5rem" />
                       Code
                     </a>
-                    <a
-                      href={project.preview}
-                      target="_blank"
-                      aria-label="github"
-                    >
+                    <a href={project.preview} target="_blank">
                       <BsTvFill size="1.75rem" />
                       Live
                     </a>
