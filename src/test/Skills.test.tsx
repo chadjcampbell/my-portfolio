@@ -2,7 +2,7 @@ import { beforeEach, describe, expect, test, vi } from "vitest";
 import { render, screen } from "@testing-library/react";
 import { Skills } from "../components/skills/Skills";
 
-describe("Skills component", () => {
+describe("Skills component ", () => {
   beforeEach(() => {
     // IntersectionObserver isn't available in test environment
     const mockIntersectionObserver = vi.fn();

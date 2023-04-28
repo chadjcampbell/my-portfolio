@@ -3,7 +3,7 @@ import { render, screen } from "@testing-library/react";
 import { About, aboutArray } from "../components/about/About";
 import { act } from "react-dom/test-utils";
 
-describe("About component", () => {
+describe("About component ", () => {
   test("renders the text 'Hello, I'm'", () => {
     render(<About />);
     const helloText = screen.getByText("Hello, I'm");
