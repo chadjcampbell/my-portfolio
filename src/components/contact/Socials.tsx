@@ -61,7 +61,7 @@ const Socials = () => {
         </motion.a>
       </motion.div>
       <div className={styles.email}>
-        <h4>Email: chadjcampbell@gmail.com</h4>
+        <h3>Email: chadjcampbell@gmail.com</h3>
       </div>
     </div>
   );

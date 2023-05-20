@@ -36,7 +36,7 @@ export const About = () => {
         <img
           className={styles["about-img"]}
           alt="Chad Campbell Profile Picture"
-          src="/chadjcampbell.jpeg"
+          src="/chadjcampbell.webp"
         />
       </section>
     </div>

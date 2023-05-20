@@ -98,6 +98,7 @@ export const Projects = () => {
                       className={styles["accordion-icon"]}
                       src={project.icon}
                       alt={project.name}
+                      loading="lazy"
                     />
                   </button>
                 </h3>
@@ -140,6 +141,7 @@ export const Projects = () => {
                   className={styles["accordion-image"]}
                   src={project.background}
                   alt={project.name}
+                  loading="lazy"
                 />
               </div>
             </motion.div>
