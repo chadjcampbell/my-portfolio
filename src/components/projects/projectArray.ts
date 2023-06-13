@@ -15,7 +15,7 @@ export const projectArray = [
     hidden: true,
     name: "Family Game Night",
     code: "https://github.com/chadjcampbell/familyGameNight",
-    preview: "https://family-game-night.onrender.com/",
+    preview: "https://web-production-5ab18.up.railway.app/",
     icon: "./family-game-night-icon.webp",
     background: "./family-game-night-ss.webp",
     description:
