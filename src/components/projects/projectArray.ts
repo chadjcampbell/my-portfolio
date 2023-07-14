@@ -2,6 +2,17 @@ export const projectArray = [
   {
     panel: "panel1",
     hidden: false,
+    name: "InStock",
+    code: "https://github.com/chadjcampbell/inventory-manager",
+    preview: "https://instock-three.vercel.app/",
+    icon: "./instock-icon.webp",
+    background: "./instock-ss.webp",
+    description:
+      "InStock is a MERN stack inventory management system. It has user auth and product management, with all the relationships and CRUD operations you would expect for both.",
+  },
+  {
+    panel: "panel2",
+    hidden: true,
     name: "Tally Yo",
     code: "https://github.com/chadjcampbell/tally-yo",
     preview: "https://chadjcampbell.github.io/tally-yo/",
@@ -11,7 +22,7 @@ export const projectArray = [
       "Tally Yo is a chat/stock trading app where you gain cash by chatting with friends, or paper trading stocks. You can search, buy, and sell, then check out how your picks are doing with portfolio performance.",
   },
   {
-    panel: "panel2",
+    panel: "panel3",
     hidden: true,
     name: "Family Game Night",
     code: "https://github.com/chadjcampbell/familyGameNight",
@@ -22,7 +33,7 @@ export const projectArray = [
       "Family Game Night is a CRUD app that lets you add games to a canvas wheel that randomly spins to pick a game. It also lets you add family members for a leaderboard.",
   },
   {
-    panel: "panel3",
+    panel: "panel4",
     hidden: true,
     name: "Sweet Deals",
     code: "https://github.com/chadjcampbell/shopping-cart",
@@ -33,7 +44,7 @@ export const projectArray = [
       "Sweet Deals is a front end shopping cart app. It uses the Fakestore API for items, and keeps the cart with items and totals using context and local storage.",
   },
   {
-    panel: "panel4",
+    panel: "panel5",
     hidden: true,
     name: "Nintendo Memory",
     code: "https://github.com/chadjcampbell/memory-card",
@@ -44,7 +55,7 @@ export const projectArray = [
       "Nintendo Memory is a single page memory card game. The cards are remounted randomly after every selection. It keeps track of current score and personal best in the header.",
   },
   {
-    panel: "panel5",
+    panel: "panel6",
     hidden: true,
     name: "Battleship JS",
     code: "https://github.com/chadjcampbell/battleshipJS",

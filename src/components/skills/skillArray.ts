@@ -9,7 +9,6 @@ export const skillArray = [
     name: "CSS",
     link: "https://css-tricks.com/",
   },
-
   {
     class: "devicon-javascript-plain colored",
     name: "Javascript",
@@ -21,11 +20,25 @@ export const skillArray = [
     link: "https://www.typescriptlang.org/",
   },
   {
+    class: "devicon-python-plain colored",
+    name: "Python",
+    link: "https://www.learnpython.org/",
+  },
+  {
+    class: "devicon-c-plain colored",
+    name: "C",
+    link: "https://www.learn-c.org/",
+  },
+  {
     class: "devicon-react-original colored",
     name: "React",
     link: "https://react.dev/",
   },
-
+  {
+    class: "devicon-flask-original colored",
+    name: "Flask",
+    link: "https://flask.palletsprojects.com/en/2.2.x/",
+  },
   {
     class: "devicon-firebase-plain colored",
     name: "Firebase",
@@ -37,9 +50,19 @@ export const skillArray = [
     link: "https://sqlite.org/index.html",
   },
   {
+    class: "devicon-mongodb-plain colored",
+    name: "MongoDB",
+    link: "https://www.mongodb.com/docs/",
+  },
+  {
     class: "devicon-nodejs-plain colored",
     name: "NodeJS",
     link: "https://nodejs.org/en",
+  },
+  {
+    class: "devicon-express-original colored",
+    name: "Express",
+    link: "https://expressjs.com/",
   },
   {
     class: "devicon-git-plain colored",
@@ -47,19 +70,8 @@ export const skillArray = [
     link: "https://git-scm.com/",
   },
   {
-    class: "devicon-c-plain colored",
-    name: "C",
-    link: "https://www.learn-c.org/",
-  },
-  {
-    class: "devicon-python-plain colored",
-    name: "Python",
-    link: "https://www.learnpython.org/",
-  },
-
-  {
-    class: "devicon-flask-original colored",
-    name: "Flask",
-    link: "https://flask.palletsprojects.com/en/2.2.x/",
+    class: "devicon-vscode-plain colored",
+    name: "VSCode",
+    link: "https://code.visualstudio.com/",
   },
 ];
